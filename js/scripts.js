@@ -4,7 +4,7 @@
 // var myAge = "48";
 // console.log ("Hello my name is" + myName +  ". I am " + myAge + " years old.")
 // const myName = 'Jeff';
-// let myAge = '48';
+// let myAge = '48';git 
 // // Log out my name and age es5 way
 // console.log("Hello my name is" + myName + ". I am " + myAge + " years old.");
 // es6 way
@@ -13,7 +13,7 @@
 // const today = new Date();
 // console.log(today);
 // let day = today.getDate();
-// console.log(day);
+// console.log(day);gti 
 // let month = today.getMonth() + 1;
 // let year = today.getFullYear();
 // let hours = today.getHours() - 12;
