@@ -131,3 +131,49 @@
 // myNum *= 5;
 // // myNum %= 5;
 // console.log (myNum);
+
+
+// Asks if the user is over 18
+// If the user is over 18, allow them to proceed, otherwise alert the user that they are not old enough.
+// Now that all your users at this point are at least 18, ask if they are less than 80 years old.
+// Now ask the users who are between 18 and 80 if they like Star Wars. If they are over 80, ask if they like prunes.
+// If they say they don't Star Wars, end the program. In all other cases, alert them with a message.
+
+function agePrompt() {
+    let age = prompt('Are you over 18 years old?\nYes or No');
+    console.log(age);
+
+
+    switch (true) {
+        case age == 'yes' || age == 'Yes' || age == 'y' || age == 'Y':
+            let less = prompt('Are you less then 80 years old?\nYes or No');
+            console.log(less);
+            switch (true) {
+                case less == 'no' || less == 'No' || less == 'n' || less == 'N':
+                    alert('You Must like prunes!');
+                    agePrompt();
+                    break;
+                case less == 'yes' || less == 'Yes' || less == 'y' || less == 'Y':
+                    prompt('Do you like Star Wars?');
+                    break;
+                case less == 'yes' || less == 'Yes' || less == 'y' || less == 'Y':
+
+                    prompt('You are wonderful human!')
+                    agePrompt();
+                case less == 'no' || less == 'No' || less == 'n' || less == 'N':
+                    alert('Die you Rebel bastard!')
+                    agePrompt();
+            }
+        case age == 'no' || age == 'No' || age == 'n' || age == 'N':
+            alert('Sorry your not old enough to play.');
+            break;
+        case age == '':
+            agePrompt();
+            break;
+
+        default:
+            alert('Please enter a valid answer');
+            agePrompt();
+    }
+}
+agePrompt();
